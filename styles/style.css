@@ -1,0 +1,111 @@
+main{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    width: 1440px;
+    text-align: center;
+    
+    
+}
+.container{
+    
+    margin: auto;
+   
+    height: 677px;
+    background-color:#2D25A0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copa-text{
+    margin-left: 70px;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    
+} 
+.copa-img{
+    margin: 40px;
+}
+.copa-img:hover{
+    transform: translate(50px, 50px) scale(0.6) rotate(45deg);
+    transition: width .5s, height 1s, transform 4s;}
+    
+.copa-img img{
+    width: 560px;
+    height: 430px;
+   
+}
+.btn{
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 30px;
+    color: white;
+    font-weight: 500;
+    border: none;
+    font-size: 20px;
+    margin-top: 0;
+    width: 200px;
+}
+.players{
+    display: grid;
+    row-gap: 50px;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 120px;
+     
+}
+
+.player{
+    width: 340px;
+    
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    /* box-shadow: 4px 4px rgba(155, 154, 154, 0.452); */
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    
+}
+.player img{
+    text-align: center;
+    width: 97%;
+    padding: 5px;
+    
+}
+.player-txt {
+    padding: 10px;
+    
+}
+.player-txt p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+.logo img{
+    width: 40%;
+    
+}
+.logo, .social, .footer {
+    text-align: center;
+}
+.social img{
+    width: 40px;
+    margin-left: 15px;
+}
+/* MEDIA QUERY */
+@media (max-width:668px){
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    main{
+        width: 670px;
+    }
+    .container{
+        
+        display: grid;
+        height: 1200px;
+    }
+}
+#chat{
+    text-decoration: none;
+    font-size: 20px;
+    color: #2D25A0;
+}
